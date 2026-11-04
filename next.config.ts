@@ -17,8 +17,10 @@ const nextConfig: NextConfig = {
   ],
   outputFileTracingExcludes: {
     "*": [
-      "node_modules/@whiskeysockets/baileys/**/*",
-      "node_modules/whatsapp-rust-bridge/**/*",
+      "./node_modules/@whiskeysockets/baileys/**/*",
+      "./node_modules/whatsapp-rust-bridge/**/*",
+      "./node_modules/sharp/**/*",
+      "./node_modules/jimp/**/*",
     ],
   },
   turbopack: {
