@@ -15,13 +15,10 @@ const nextConfig: NextConfig = {
     "qrcode-terminal",
     "@prisma/client",
   ],
-  outputFileTracingIncludes: {
-    "/*": ["./node_modules/.prisma/client/**/*"],
-  },
   outputFileTracingExcludes: {
-    "/*": [
-      "./node_modules/@whiskeysockets/baileys/**/*",
-      "./node_modules/whatsapp-rust-bridge/**/*",
+    "*": [
+      "node_modules/@whiskeysockets/baileys/**/*",
+      "node_modules/whatsapp-rust-bridge/**/*",
     ],
   },
   turbopack: {
