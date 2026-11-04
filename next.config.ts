@@ -13,7 +13,22 @@ const nextConfig: NextConfig = {
     "jimp",
     "pino",
     "qrcode-terminal",
+    "@prisma/client",
   ],
+  outputFileTracingIncludes: {
+    "/*": ["./node_modules/.prisma/client/**/*"],
+  },
+  outputFileTracingExcludes: {
+    "/*": [
+      "./node_modules/@whiskeysockets/baileys/**/*",
+      "./node_modules/whatsapp-rust-bridge/**/*",
+    ],
+  },
+  experimental: {
+    outputFileTracingIncludes: {
+      "/*": ["./node_modules/.prisma/client/**/*"],
+    },
+  },
   turbopack: {
     root: path.resolve(__dirname),
   },
