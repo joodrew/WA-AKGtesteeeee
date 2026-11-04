@@ -24,11 +24,6 @@ const nextConfig: NextConfig = {
       "./node_modules/whatsapp-rust-bridge/**/*",
     ],
   },
-  experimental: {
-    outputFileTracingIncludes: {
-      "/*": ["./node_modules/.prisma/client/**/*"],
-    },
-  },
   turbopack: {
     root: path.resolve(__dirname),
   },
