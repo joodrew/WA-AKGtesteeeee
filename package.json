@@ -4,8 +4,8 @@
   "private": false,
   "license": "MIT",
   "scripts": {
-    "dev": "npx tsx src/server/index.ts",
-    "build": "next build",
+    "dev": "npx tsx src/server/index.ts","postinstall": "prisma generate",
+  "build": "next build"
     "start": "NODE_ENV=production npx tsx src/server/index.ts",
     "lint": "eslint",
     "db:push": "prisma db push && prisma generate",
